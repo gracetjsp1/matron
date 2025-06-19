@@ -919,7 +919,10 @@ a h5,
 a h6 {
   font-weight: 700;
 }
+.banner-content h2{
+  text-shadow: 1px 1px 3px white;
 
+}
 .blog-section .post-item-inner .blog-footer .blog-comment,
 .timeline .class-schedule-main .class-schedule-all .each-day h5,
 .timeline .class-schedule-top .schedule-course a::after,
@@ -1293,6 +1296,7 @@ textarea {
 .blog-section .service-item-inner .service-content .meta,
 .banner-section .banner-wrapper .banner-content h1 b {
   color: #168282;
+  text-shadow: 1px 1px 3px white;
 }
 
 .footer-section.style-1
@@ -3447,13 +3451,15 @@ select {
 .banner-section .swiper-slide {
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 170px 0;
+  background-position: center center;
+  padding: 190px 0;
 }
 .banner-section .banner-wrapper .banner-content {
   max-width: 550px;
 }
 .banner-section .banner-wrapper .banner-content h1 {
   line-height: 1.2;
+  
 }
 @media (min-width: 576px) {
   .banner-section .banner-wrapper .banner-content h1 {
@@ -8394,7 +8400,7 @@ select {
   border: none;
 }
 .footer-section.style-1 .footer-bottom {
-  padding: 32px 0;
+  padding: 20px 0;
   border-top: 1px solid #ecf0f3;
 }
 .footer-section.style-1 .footer-bottom span {
@@ -8423,6 +8429,7 @@ select {
 }
 .banner-section .swiper-slide .banner-wrapper .banner-content h1 {
   line-height: 1.2;
+  text-shadow: 1px 1px 3px white;
 }
 @media (min-width: 576px) {
   .banner-section .swiper-slide .banner-wrapper .banner-content h1 {
@@ -8514,4 +8521,81 @@ select {
 /* If you want the whole button background to turn white */
 .nav-widget .buy-cart:hover {
   background-color: white !important;
+}
+.social-icons-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  /* gap: 15px;
+  padding: 10px 15px; */
+  list-style: none;
+  border-bottom: 1px solid #fff; /* White underline spanning full width */
+  width: 100%; /* Ensures full width */
+  box-sizing: border-box;
+}
+
+.social-icons-nav li a {
+  font-size: 20px;
+  color: white; /* or your desired color */
+  transition: color 0.3s;
+}
+
+.social-icons-nav li a:hover {
+  color: #ccc;
+}
+.social-icons-nav li,
+.social-icons-nav li a {
+  border: none !important;
+}
+.language-switch-buttons {
+  position: fixed;
+  top: 70%;
+  left: 0;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lang-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #7ec267; /* Customize as needed */
+  color: white;
+  text-decoration: none;
+  border-radius: 0px;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-left: 8px;
+}
+
+.lang-btn.en::before {
+  content: "EN";
+   color: white;
+}
+
+.lang-btn.ar::before {
+  content: "AR";
+   color: white;
+}
+
+.lang-btn:hover {
+  width: 70px;
+  justify-content: start;
+  padding-left: 15px;
+}
+
+.lang-btn.en:hover::before {
+  content: "English";
+}
+
+.lang-btn.ar:hover::before {
+  content: "Arabic";
 }
