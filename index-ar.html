@@ -45,13 +45,53 @@
     <!-- ========== Mobile-nav section start here ========== -->
     <div class="mobile-menu">
         <div class="container">
-            <div class="mobile-menu-wrapper">
+            <div class="mobile-menu-wrapper  d-flex  justify-content-md-between  align-items-center">
+                <!-- Logo -->
                 <div class="logo">
                     <a href="index.html">
-                        <img src="assets/images/logo/logo.jpg" alt="Mukti">
+                        <img src="assets/images/logo/logo.png" alt="Mukti">
                     </a>
                 </div>
-                <div class="open-menu"><i class="icofont-navigation-menu"></i></div>
+
+                <!-- Language Switcher -->
+                <!-- <ul class="language-switcher-mobile d-flex align-items-center mb-0">
+                    <li class="tooltip-container">
+                        <a href="index-ar.html" class="lang-btn-mobile" title="عربي">
+                            <img src="assets/images/logo/ar.svg" class="flag" alt="Arabic Flag">
+                            <span class="lang-label">AR</span>
+                            <span class="tooltip-text">Arabic</span>
+                        </a>
+                    </li>
+                    <li class="tooltip-container">
+                        <a href="index.html" class="lang-btn-mobile" title="English">
+                            <img src="assets/images/logo/en.svg" class="flag" alt="English Flag">
+                            <span class="lang-label">EN</span>
+                            <span class="tooltip-text">English</span>
+                        </a>
+                    </li>
+                </ul> -->
+                <div>
+                    <ul class="language-switcher-mobile d-flex align-items-center mb-0 pl-md-5 ">
+                        <li>
+                            <a href="index-ar.html" class="lang-btn-mobile" title="عربي">
+                                <img src="assets/images/logo/ar.svg" class="flag" alt="Arabic Flag">
+                                <span class="lang-label">عر</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html" class="lang-btn-mobile" title="English">
+                                <img src="assets/images/logo/en.svg" class="flag" alt="English Flag">
+                                <span class="lang-label">EN</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <!-- Hamburger -->
+                <div class="open-menu pt-2 pl-2">
+                    <i class="icofont-navigation-menu"></i>
+                </div>
             </div>
             <nav id="mobile-nav">
                 <ul class="home-nav">
@@ -83,13 +123,27 @@
                         <a href="./index.html#location">موقع</a>
                     </li>
                 </ul>
-                <ul class="language-nav">
+                <!-- <ul class="language-nav">
                     <li class="blog">
-                        <a href="#">اختر اللغة</a>
+                        <a href="#">Select Language</a>
                         <ul>
-                            <li><a href="index.html">إنجليزي</a></li>
-                            <li><a href="index-ar.html">عربي</a></li>
+                            <li><a href="index.html">English</a></li>
+                            <li><a href="index-ar.html">Arabic</a></li>
                         </ul>
+                    </li>
+                </ul> -->
+                <ul class="social-icons-nav d-flex flex-row">
+                    <li>
+                        <a href="https://www.facebook.com/share/1EEpsreFbY/?mibextid=wwXIfr" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="icofont-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/matron_medical_services?igsh=MjJrdWw5bWpleHQw&utm_source=qr"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="icofont-instagram"></i>
+                        </a>
                     </li>
                 </ul>
 
@@ -105,7 +159,7 @@
             <div class="container">
                 <div class="row justify-content-between align-items-center px-15">
                     <div class="header-logo">
-                        <a href="index.html" class="logo"><img src="assets/images/logo/logo.jpg" alt="logo"></a>
+                        <a href="index.html" class="logo"><img src="assets/images/logo/logo.png" alt="logo"></a>
                     </div>
                     <ul class="header-contact-info d-flex align-items-center">
                         <li class="item">
@@ -114,7 +168,7 @@
                                     <img src="assets/images/header/1.png" alt="">
                                 </div>
                                 <div class="item-content">
-                                    <span>رقم</span>
+                                    <span>رقم :</span>
                                     <p><a href="tel:+97444310597">+974 44310597</a></p>
                                     <p><a href="tel:+97451873337">974 51873337</a></p>
                                 </div>
@@ -126,7 +180,7 @@
                                     <img src="assets/images/header/2.png" alt="">
                                 </div>
                                 <div class="item-content">
-                                    <span> بريد إلكتروني</span>
+                                    <span>بريد إلكتروني :</span>
                                     <p><a href="mailto:Matronmedical@gmail.com"> Matronmedical@gmail.com</a></p>
                                 </div>
                             </div>
@@ -137,13 +191,14 @@
                                     <img src="assets/images/header/3.png" alt="">
                                 </div>
                                 <div class="item-content">
-                                    <span>عنوان </span>
-                                    <p>٨٤٦٣
-                                        المبنى رقم ٣٢، المنطقة ٥٣،<br>
-                                        شارع ٩٣٠، الدوحة - قطر</p>
+                                    <span>عنوان :</span>
+                                    <p> <a href="https://maps.app.goo.gl/PS4b7G85MRMBcmi8A" target="_blank"
+                                            rel="noopener noreferrer">المبنى رقم 32، المنطقة 53، <br>شارع 930، الدوحة - قطر</a>
+                                    </p>
                                 </div>
                             </div>
                         </li>
+
                     </ul>
                 </div>
             </div>
@@ -160,21 +215,39 @@
                                 <li><a href="./index.html#about-us">عن</a></li>
                                 <li><a href="./index.html#service">خدمات</a></li>
                                 <li><a href="./index.html#contact-us">اتصل بنا</a> </li>
-                                <li><a href="./index.html#location">موقع</a>
-                                <li><a href="#">اختر اللغة</a>
+                                <li><a href="./index.html#location">موقع</a> </li>
+
+                                <!-- <li><a href="#">Select Language</a>
                                     <ul class="submenu">
-                                        <li><a href="index.html">إنجليزي</a></li>
-                                        <li><a href="index-ar.html">عربي</a></li>
+                                        <li><a href="index.html">English</a></li>
+                                        <li><a href="index-ar.html">Arabic</a></li>
                                     </ul>
-                                </li>
+                                </li> -->
                             </ul>
-                           <ul class="nav-widget d-flex justify-content-between align-items-center">
+                            <ul class="nav-widget d-flex justify-content-between align-items-center">
 
                                 <li class="buy-cart ml-3">
-                                    <a href="https://www.facebook.com/share/1EEpsreFbY/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer"><i class="icofont-facebook"></i></a>
+                                    <a href="https://www.facebook.com/share/1EEpsreFbY/?mibextid=wwXIfr" target="_blank"
+                                        rel="noopener noreferrer"><i class="icofont-facebook"></i></a>
                                 </li>
                                 <li class="buy-cart ml-3">
-                                    <a href="https://www.instagram.com/matron_medical_services?igsh=MjJrdWw5bWpleHQw&utm_source=qr" target="_blank" rel="noopener noreferrer"><i class="icofont-instagram"></i></a>
+                                    <a href="https://www.instagram.com/matron_medical_services?igsh=MjJrdWw5bWpleHQw&utm_source=qr"
+                                        target="_blank" rel="noopener noreferrer"><i class="icofont-instagram"></i></a>
+                                </li>
+                                <!-- Arabic -->
+                                <li class="language-switcher ml-3">
+                                    <a href="index-ar.html" class="lang-btn" title="عربي">
+                                        <img src="assets/images/logo/ar.svg" class="flag" alt="Arabic Flag">
+                                        <span class="lang-label">عر</span>
+                                    </a>
+                                </li>
+
+                                <!-- English -->
+                                <li class="language-switcher ml-1">
+                                    <a href="index.html" class="lang-btn" title="English">
+                                        <img src="assets/images/logo/en.svg" class="flag" alt="English Flag">
+                                        <span class="lang-label">EN</span>
+                                    </a>
                                 </li>
                                 <!-- <li class="buy-cart ml-3">
                                     <i class="icofont-twitter"></i>
@@ -194,17 +267,17 @@
         <div class="swiper-container banner-slider">
             <div class="swiper-wrapper">
                 <!-- Slide 1 -->
-                <div class="swiper-slide" style="background-image: url(assets/images/banner/2.webp);">
+                <div class="swiper-slide" style="background-image: url(assets/images/banner/3.jpg);">
                     <div class="container">
                         <div class="banner-wrapper">
                             <div class="banner-content">
-                                <h2 class="wow fadeInDown" data-wow-duration="2s" data-wow-delay=".1s"> رعاية الأم والخليج</h2>
-                                <h1 class="wow fadeInLeft" data-wow-duration="2s" data-wow-delay=".1s">
-                                    <b>الأم الحنونة </b> احتضان فرحة المولود الجديد
-                                </h1>
-                                <a href="tel:+97444310597" class="lab-btn wow fadeInUp" data-wow-duration="1s"
-                                data-wow-delay=".1s">
-                                <span>اتصل بنا<i class="icofont-rounded-double-right"></i></span></a>
+                                <h2 class="wow fadeInDown" data-wow-duration="2s" data-wow-delay=".1s"> رعاية طبية متخصصة </h2>
+                                <h1 class="wow fadeInLeft" data-wow-duration="2s" data-wow-delay=".1s"><b>شفاء الأرواح
+                                    </b> استعادة الأمل</h1>
+                                <a href="tel:+97451873337" class="lab-btn wow fadeInUp" data-wow-duration="1s"
+                                    data-wow-delay=".1s">
+                                    <span>اتصل بنا<i class="icofont-rounded-double-right"></i></span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -219,9 +292,10 @@
                                 <h1 class="wow fadeInLeft" data-wow-duration="2s" data-wow-delay=".1s">
                                     <b>الأيدي الشافية </b> قلوب حنونة ....
                                 </h1>
-                                <a href="tel:+97444310597" class="lab-btn wow fadeInUp" data-wow-duration="1s"
-                                data-wow-delay=".1s">
-                                <span>اتصل بنا<i class="icofont-rounded-double-right"></i></span></a>
+                                <a href="tel:+97451873337" class="lab-btn wow fadeInUp" data-wow-duration="1s"
+                                    data-wow-delay=".1s">
+                                    <span>اتصل بنا <i class="icofont-rounded-double-right"></i></span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -236,9 +310,10 @@
                                 <h1 class="wow fadeInLeft" data-wow-duration="2s" data-wow-delay=".1s">
                                     <b>أبعد من العلاج </b> نحن نهتم بك ....
                                 </h1>
-                                <a href="tel:+97444310597" class="lab-btn wow fadeInUp" data-wow-duration="1s"
-                                data-wow-delay=".1s">
-                                <span>اتصل بنا<i class="icofont-rounded-double-right"></i></span></a>
+                                <a href="tel:+97451873337" class="lab-btn wow fadeInUp" data-wow-duration="1s"
+                                    data-wow-delay=".1s">
+                                    <span>اتصل بنا <i class="icofont-rounded-double-right"></i></span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -251,6 +326,7 @@
             <div class="swiper-button-prev"></div>
         </div>
     </section>
+
 
 
 
@@ -313,7 +389,7 @@
                                                     <li> رعاية موثوقة في جميع أنحاء الدوحة، قطر</li>
 
                                                 </ul>
-                                                <a href="tel:+97444310597" class="lab-btn"><span>اتصل بنا <i
+                                                <a href="tel:+97451873337" class="lab-btn"><span>اتصل بنا <i
                                                             class="icofont-rounded-double-right"></i></span></a>
                                             </div>
                                         </div>
@@ -388,7 +464,7 @@
     <!-- ==========Counter Section Ends Here========== -->
 
 
-    <!-- ==========Service Section Start Here========== -->
+   <!-- ==========Service Section Start Here========== -->
     <section class="service-section style-1 padding-tb bg-color " id="service">
         <div class="container">
             <div class="row">
@@ -396,7 +472,204 @@
                     <!-- <h2><span>We Are</span></h2> -->
                     <h2>خدمات رعاية متخصصة للأمهات والأطفال وكبار السن في الدوحة</h2>
                 </div>
-                <div class="section-wrapper">
+            </div>
+            <div class="row">
+                <!-- <div class="col-12 col-md-6 col-lg-4 mb-5 ">
+                    <div class="card border-0 rounded-0 shadow-lg bg-white ">
+                        <img src="assets/images/service/elder-care.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">HOME CARE</h5>
+                            <p class="card-text">We offer personalized home care services to support patients with
+                                medical and daily needs in the comfort of their homes.</p>
+                            <a href="tel:+97451873337" class="lab-btn"><span>اتصل بنا <i
+                                        class="icofont-rounded-double-right"></i></span></a>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="col-12 col-md-12 col-lg-6 mb-5 ">
+                    <div class="card mb-3 border-0 rounded-0  shadow-lg  bg-white">
+                        <div class="row no-gutters">
+                            <div class="col-12 col-md-5 col-lg-5">
+                                <img src="assets/images/service/home-care.webp" alt="..." class="img-fluid"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="col-12 col-md-7 col-lg-7">
+                                <div class="card-body">
+                                    <h5 class="card-title">الرعاية المنزلية</h5>
+                                    <p class="card-text">نحن نقدم خدمات الرعاية المنزلية المخصصة لدعم المرضى الذين لديهم احتياجات طبية ويومية في راحة منازلهم.</p>
+                                    <a href="tel:+97451873337" class="lab-btn"><span>اتصل بنا <i
+                                                class="icofont-rounded-double-right"></i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6 mb-5 ">
+                    <div class="card mb-3 border-0 rounded-0  shadow-lg  bg-white">
+                        <div class="row no-gutters">
+                            <div class="col-12 col-md-5 col-lg-5">
+                                <img src="assets/images/service/newborn-and-child-care.webp" alt="..." class="img-fluid"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="col-12 col-md-7 col-lg-7">
+                                <div class="card-body">
+                                    <h5 class="card-title">رعاية الأطفال حديثي الولادة والأطفال</h5>
+                                    <p class="card-text">تساعد خدمات رعاية الأطفال حديثي الولادة والأطفال الآباء في التغذية والنظافة والرعاية اليومية لضمان النمو والتطور الصحي.</p>
+                                    <a href="tel:+97451873337" class="lab-btn"><span>اتصل بنا <i
+                                                class="icofont-rounded-double-right"></i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6 mb-5 ">
+                    <div class="card mb-3 border-0 rounded-0  shadow-lg  bg-white">
+                        <div class="row no-gutters">
+                            <div class="col-12 col-md-5 col-lg-5">
+                                <img src="assets/images/service/elder-care.jpg" alt="..." class="img-fluid"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="col-12 col-md-7 col-lg-7">
+                                <div class="card-body">
+                                    <h5 class="card-title">رعاية المسنين</h5>
+                                    <p class="card-text">نحن نقدم رعاية متعاطفة لكبار السن مع المراقبة والدعم اليومي لتعزيز الراحة والكرامة والاستقلال في المنزل.</p>
+                                    <a href="tel:+97451873337" class="lab-btn"><span>اتصل بنا <i
+                                                class="icofont-rounded-double-right"></i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6 mb-5 ">
+                    <div class="card mb-3 border-0 rounded-0  shadow-lg  bg-white">
+                        <div class="row no-gutters">
+                            <div class="col-12 col-md-5 col-lg-5">
+                                <img src="assets/images/service/caregivers.webp" alt="..." class="img-fluid"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="col-12 col-md-7 col-lg-7">
+                                <div class="card-body">
+                                    <h5 class="card-title">مقدمو الرعاية</h5>
+                                    <p class="card-text">يساعد مقدمو الرعاية المدربون لدينا في الأنشطة اليومية والنظافة والدعم العاطفي لتعزيز رفاهية جميع الفئات العمرية.</p>
+                                    <a href="tel:+97451873337" class="lab-btn"><span>اتصل بنا <i
+                                                class="icofont-rounded-double-right"></i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6 mb-5 ">
+                    <div class="card mb-3 border-0 rounded-0  shadow-lg  bg-white">
+                        <div class="row no-gutters">
+                            <div class="col-12 col-md-5 col-lg-5">
+                                <img src="assets/images/service/pregnancy-care.webp" alt="..." class="img-fluid"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="col-12 col-md-7 col-lg-7">
+                                <div class="card-body">
+                                    <h5 class="card-title">رعاية الحمل</h5>
+                                    <p class="card-text">نحن نقدم رعاية الحمل المتخصصة مع مراقبة ما قبل الولادة والتوجيه لضمان رحلة آمنة وصحية للأمومة.</p>
+                                    <a href="tel:+97451873337" class="lab-btn"><span>اتصل بنا <i
+                                                class="icofont-rounded-double-right"></i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6 mb-5 ">
+                    <div class="card mb-3 border-0 rounded-0  shadow-lg  bg-white">
+                        <div class="row no-gutters">
+                            <div class="col-12 col-md-5 col-lg-5">
+                                <img src="assets/images/service/maternity-care.webp" alt="..." class="img-fluid"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="col-12 col-md-7 col-lg-7">
+                                <div class="card-body">
+                                    <h5 class="card-title">رعاية الأمومة</h5>
+                                    <p class="card-text">توفر خدمات رعاية الأمومة لدينا الدعم للأمهات قبل الولادة وبعدها من خلال التمريض المتخصص ومساعدة الأطفال حديثي الولادة في المنزل.</p>
+                                    <a href="tel:+97451873337" class="lab-btn"><span>اتصل بنا <i
+                                                class="icofont-rounded-double-right"></i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6 mb-5 ">
+                    <div class="card mb-3 border-0 rounded-0  shadow-lg  bg-white">
+                        <div class="row no-gutters">
+                            <div class="col-12 col-md-5 col-lg-5">
+                                <img src="assets/images/service/school-nurse.webp" alt="..." class="img-fluid"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="col-12 col-md-7 col-lg-7">
+                                <div class="card-body">
+                                    <h5 class="card-title">ممرضة المدرسة</h5>
+                                    <p class="card-text">نحن نوفر ممرضات مدرسيات محترفات لضمان صحة الطلاب وإدارة حالات الطوارئ وتعزيز العافية في البيئات التعليمية.</p>
+                                    <a href="tel:+97451873337" class="lab-btn"><span>اتصل بنا <i
+                                                class="icofont-rounded-double-right"></i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6 mb-5 ">
+                    <div class="card mb-3 border-0 rounded-0  shadow-lg  bg-white">
+                        <div class="row no-gutters">
+                            <div class="col-12 col-md-5 col-lg-5">
+                                <img src="assets/images/service/travel-care.webp" alt="..." class="img-fluid"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="col-12 col-md-7 col-lg-7">
+                                <div class="card-body">
+                                    <h5 class="card-title">رعاية السفر</h5>
+                                    <p class="card-text">نحن نقدم خدمات رعاية السفر مع التحضير الطبي ومساعدة التمريض لضمان رحلات آمنة وصحية في أي مكان.</p>
+                                    <a href="tel:+97451873337" class="lab-btn"><span>اتصل بنا <i
+                                                class="icofont-rounded-double-right"></i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6 mb-5 ">
+                    <div class="card mb-3 border-0 rounded-0  shadow-lg  bg-white">
+                        <div class="row no-gutters">
+                            <div class="col-12 col-md-5 col-lg-5">
+                                <img src="assets/images/service/corporate-nurses.webp" alt="..." class="img-fluid"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="col-12 col-md-7 col-lg-7">
+                                <div class="card-body">
+                                    <h5 class="card-title">ممرضات الشركات</h5>
+                                    <p class="card-text">تضمن خدمات التمريض الخاصة بشركتنا صحة وسلامة الموظفين من خلال برامج الدعم الطبي والعافية في الموقع.</p>
+                                    <a href="tel:+97451873337" class="lab-btn"><span>اتصل بنا <i
+                                                class="icofont-rounded-double-right"></i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="col-12 col-md-12 col-lg-6 mb-5 ">
+                    <div class="card mb-3 border-0 rounded-0  shadow-lg  bg-white">
+                        <div class="row no-gutters">
+                            <div class="col-12 col-md-5 col-lg-5">
+                                <img src="assets/images/service/allied-health-care-service.webp" alt="..."
+                                    class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <div class="card-body">
+                                    <h5 class="card-title">ALLIED HEALTH CARE SERVICE</h5>
+                                    <p class="card-text">Our allied health care services include physiotherapy, lab
+                                        testing, and rehabilitation to support recovery and well-being at home.</p>
+                                    <a href="tel:+97451873337" class="lab-btn"><span>اتصل بنا <i
+                                                class="icofont-rounded-double-right"></i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <div class="section-wrapper">
                     <div class="service-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
                         <div class="service-inner">
                             <div class="service-thumb">
@@ -404,16 +677,18 @@
                                     class="img-fluid">
                             </div>
                             <div class="service-content">
-                                <h4><a href="#">رعاية الأم والطفل</a></h4>
-                                <p>توفر خدمات ماترو الطبية للعملاء خدمات طبية ورعاية صحية شاملة ومخصصة في خصوصية وراحة
-                                    منازلهم.
+                                <h4><a href="#">MOTHER & BABY CARE</a></h4>
+                                <p>Matro Medical Services provides clients with individualized and comprehensive
+                                    medical and health care services in the privacy and comfort of their home.
                                     <br>
-                                    <b>رعاية الأم </b> -تتأكد خدمات الرعاية الطبية للأم من أن الأم تتعافى بشكل صحيح، ثم
-                                    نقوم بإرشادها وتقديم عرض توضيحي حول كيفية رعاية المولود الجديد.
-                                    <br><b>رعاية الطفل</b> - نحن نقدم رعاية كاملة لإعدادات الطفل حتى تتمكن من الحصول على
-                                    كل الراحة التي تحتاجها لمواصلة حياتك اليومية.
+                                    <b>Mother Care </b> - Matron Medical Services ensure that the mother is healing
+                                    properly, then we instruct and provide them a demonstration on how to care a
+                                    newborn.
+                                    <br><b>Baby Care</b> - We provide complete care for baby settings so you can get all
+                                    the
+                                    rest you need to go on with your daily life.
                                 </P>
-                                <a href="tel:+97444310597" class="lab-btn"><span>اتصل بنا <i
+                                <a href="tel:+97451873337" class="lab-btn"><span>اتصل بنا <i
                                             class="icofont-rounded-double-right"></i></span></a>
                             </div>
                         </div>
@@ -422,15 +697,19 @@
                     <div class="service-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
                         <div class="service-inner">
                             <div class="service-content">
-                                <h4><a href="#">رعاية المسنين</a></h4>
-                                <p> قد تكون رعاية الوالدين المسنين أمرًا صعبًا، فالتقدم في السن غالبًا ما يُسبب مشاكل
-                                    صحية غير متوقعة ويُعيق روتين الحياة اليومية. في خدمات ماترون الطبية في الدوحة، قطر،
-                                    يُقدم ممرضونا المتخصصون في رعاية المسنين دعمًا شخصيًا، يشمل مراقبة صحية يومية،
-                                    وتذكيرًا بمواعيد الأدوية، ومساعدة في الأنشطة اليومية. نُقدم رعاية تمريضية منزلية
-                                    احترافية وعطوفة لكبار السن، ونضمن لأحبائكم السلامة والراحة والرعاية المُناسبة في
-                                    بيئة منازلهم المُريحة.
+                                <h4><a href="#">ELDERLY CARE</a></h4>
+                                <p> Caring for elderly parents can be challenging, as aging often brings unexpected
+                                    health
+                                    issues and disrupts daily routines. At Matron Medical Services in Doha, Qatar, our
+                                    specialized elderly care nurses provide personalized support, including daily health
+                                    monitoring, medication reminders, and assistance with everyday activities. We
+                                    deliver
+                                    compassionate, professional home nursing care for the elderly, ensuring your loved
+                                    ones
+                                    are safe, comfortable, and well-cared for in the familiar surroundings of their own
+                                    home.
                                 </p>
-                                <a href="tel:+97444310597" class="lab-btn"><span>اتصل بنا <i
+                                <a href="tel:+97451873337" class="lab-btn"><span>اتصل بنا <i
                                             class="icofont-rounded-double-right"></i></span></a>
                             </div>
                             <div class="service-thumb">
@@ -445,21 +724,23 @@
                                 <img src="assets/images/service/pediatrics.jpg" alt="service" class="img-fluid">
                             </div>
                             <div class="service-content">
-                                <h4><a href="#">طب الأطفال / رعاية الطفل</a></h4>
-                                <p>يحلم كل أب وأم بطفل سليم وسعيد، ونحن في خدمات ماترون الطبية ندرك أهمية ذلك. يلتزم
-                                    مقدمو الرعاية الخبراء لدينا بتقديم رعاية شخصية للأطفال، لأننا نعلم أن تربية الطفل قد
-                                    تكون مرهقة، لكنها في الوقت نفسه مجزية للغاية. نضمن لطفلك الصغير رعايةً حثيثة بالحب
-                                    والصبر والاهتمام المهني، بدءًا من وقت الطعام ومرورًا باللعب وحتى النوم الهادئ.
+                                <h4><a href="#">PEDIATRIC / CHILD CARE</a></h4>
+                                <p>Every parent dreams of a healthy and happy child — and at Matron Medical Services, we
+                                    understand just how important that is. Our expert caregivers are dedicated to
+                                    providing personalized child care, because we know that raising a child can be
+                                    exhausting, yet deeply rewarding. We ensure your little one is nurtured with love,
+                                    patience, and professional attention — from mealtime to playtime and even peaceful
+                                    sleep.
                                 </p>
-                                <a href="tel:+97444310597" class="lab-btn"><span>اتصل بنا <i
+                                <a href="tel:+97451873337" class="lab-btn"><span>اتصل بنا <i
                                             class="icofont-rounded-double-right"></i></span></a>
                             </div>
 
                         </div>
-                    </div>
-                </div>
+                    </div> -->
             </div>
         </div>
+
     </section>
     <!-- ==========Service Section Ends Here========== -->
     <!-- ==========Contact Section Start Here========== -->
@@ -474,9 +755,7 @@
                                 <li>
                                     <h6>عنوان المكتب</h6>
                                     <p> <a href="https://maps.app.goo.gl/PS4b7G85MRMBcmi8A" target="_blank"
-                                            rel="noopener noreferrer">رقم السجل التجاري: ٢٠٠٣٦٥، ص.ب.: ٨٤٦٣
-                                            المبنى رقم ٣٢، المنطقة ٥٣،
-                                            شارع ٩٣٠، الدوحة - قطر</a>
+                                            rel="noopener noreferrer">رقم السجل التجاري: ٢٠٠٣٦٥، ص.ب.: مبنى رقم ٣٢، المنطقة ٥٣، شارع ٩٣٠، الدوحة - قطر</a>
                                     </p>
                                 </li>
                                 <li>

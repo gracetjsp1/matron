@@ -44,13 +44,53 @@
     <!-- ========== Mobile-nav section start here ========== -->
     <div class="mobile-menu">
         <div class="container">
-            <div class="mobile-menu-wrapper">
+            <div class="mobile-menu-wrapper  d-flex  justify-content-md-between  align-items-center">
+                <!-- Logo -->
                 <div class="logo">
                     <a href="index.html">
                         <img src="assets/images/logo/logo.png" alt="Mukti">
                     </a>
                 </div>
-                <div class="open-menu"><i class="icofont-navigation-menu"></i></div>
+
+                <!-- Language Switcher -->
+                <!-- <ul class="language-switcher-mobile d-flex align-items-center mb-0">
+                    <li class="tooltip-container">
+                        <a href="index-ar.html" class="lang-btn-mobile" title="عربي">
+                            <img src="assets/images/logo/ar.svg" class="flag" alt="Arabic Flag">
+                            <span class="lang-label">AR</span>
+                            <span class="tooltip-text">Arabic</span>
+                        </a>
+                    </li>
+                    <li class="tooltip-container">
+                        <a href="index.html" class="lang-btn-mobile" title="English">
+                            <img src="assets/images/logo/en.svg" class="flag" alt="English Flag">
+                            <span class="lang-label">EN</span>
+                            <span class="tooltip-text">English</span>
+                        </a>
+                    </li>
+                </ul> -->
+                <div>
+                    <ul class="language-switcher-mobile d-flex align-items-center mb-0 pr-md-5">
+                        <li>
+                            <a href="index-ar.html" class="lang-btn-mobile" title="عربي">
+                                <img src="assets/images/logo/ar.svg" class="flag" alt="Arabic Flag">
+                                <span class="lang-label">عر</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html" class="lang-btn-mobile" title="English">
+                                <img src="assets/images/logo/en.svg" class="flag" alt="English Flag">
+                                <span class="lang-label">EN</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <!-- Hamburger -->
+                <div class="open-menu pt-2 pl-2">
+                    <i class="icofont-navigation-menu"></i>
+                </div>
             </div>
             <nav id="mobile-nav">
                 <ul class="home-nav">
@@ -158,6 +198,7 @@
                                 </div>
                             </div>
                         </li>
+
                     </ul>
                 </div>
             </div>
@@ -192,6 +233,21 @@
                                 <li class="buy-cart ml-3">
                                     <a href="https://www.instagram.com/matron_medical_services?igsh=MjJrdWw5bWpleHQw&utm_source=qr"
                                         target="_blank" rel="noopener noreferrer"><i class="icofont-instagram"></i></a>
+                                </li>
+                                <!-- Arabic -->
+                                <li class="language-switcher ml-3">
+                                    <a href="index-ar.html" class="lang-btn" title="عربي">
+                                        <img src="assets/images/logo/ar.svg" class="flag" alt="Arabic Flag">
+                                        <span class="lang-label">عر</span>
+                                    </a>
+                                </li>
+
+                                <!-- English -->
+                                <li class="language-switcher ml-1">
+                                    <a href="index.html" class="lang-btn" title="English">
+                                        <img src="assets/images/logo/en.svg" class="flag" alt="English Flag">
+                                        <span class="lang-label">EN</span>
+                                    </a>
                                 </li>
                                 <!-- <li class="buy-cart ml-3">
                                     <i class="icofont-twitter"></i>
@@ -445,7 +501,7 @@
                                 <img src="assets/images/service/home-care.webp" alt="..." class="img-fluid"
                                     style="width: 100%; height: 100%; object-fit: cover;">
                             </div>
-                            <div class="col-12 col-md-6 col-lg-6">
+                            <div class="col-12 col-md-7 col-lg-7">
                                 <div class="card-body">
                                     <h5 class="card-title">HOME CARE</h5>
                                     <p class="card-text">We offer personalized home care services to support patients
@@ -462,14 +518,14 @@
                     <div class="card mb-3 border-0 rounded-0  shadow-lg  bg-white">
                         <div class="row no-gutters">
                             <div class="col-12 col-md-5 col-lg-5">
-                                <img src="assets/images/service/corporate-nurses.webp" alt="..." class="img-fluid"
+                                <img src="assets/images/service/newborn-and-child-care.webp" alt="..." class="img-fluid"
                                     style="width: 100%; height: 100%; object-fit: cover;">
                             </div>
-                            <div class="col-12 col-md-6 col-lg-6">
+                            <div class="col-12 col-md-7 col-lg-7">
                                 <div class="card-body">
-                                    <h5 class="card-title">CORPORATE NURSES</h5>
-                                    <p class="card-text">Our corporate nursing services ensure employee health and
-                                        safety through on-site medical support and wellness programs.</p>
+                                    <h5 class="card-title">NEWBORN AND CHILD CARE</h5>
+                                    <p class="card-text">Our newborn and child care services help parents with feeding,
+                                        hygiene, and daily care to ensure healthy growth and development.</p>
                                     <a href="tel:+97451873337" class="lab-btn"><span>Contact Us <i
                                                 class="icofont-rounded-double-right"></i></span></a>
                                 </div>
@@ -484,7 +540,7 @@
                                 <img src="assets/images/service/elder-care.jpg" alt="..." class="img-fluid"
                                     style="width: 100%; height: 100%; object-fit: cover;">
                             </div>
-                            <div class="col-12 col-md-6 col-lg-6">
+                            <div class="col-12 col-md-7 col-lg-7">
                                 <div class="card-body">
                                     <h5 class="card-title">ELDERLY CARE</h5>
                                     <p class="card-text">We provide compassionate elderly care with daily monitoring and
@@ -503,7 +559,7 @@
                                 <img src="assets/images/service/caregivers.webp" alt="..." class="img-fluid"
                                     style="width: 100%; height: 100%; object-fit: cover;">
                             </div>
-                            <div class="col-12 col-md-6 col-lg-6">
+                            <div class="col-12 col-md-7 col-lg-7">
                                 <div class="card-body">
                                     <h5 class="card-title">CAREGIVERS</h5>
                                     <p class="card-text">Our trained caregivers assist with daily activities, hygiene,
@@ -515,7 +571,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-12 col-md-12 col-lg-6 mb-5 ">
                     <div class="card mb-3 border-0 rounded-0  shadow-lg  bg-white">
                         <div class="row no-gutters">
@@ -523,7 +578,7 @@
                                 <img src="assets/images/service/pregnancy-care.webp" alt="..." class="img-fluid"
                                     style="width: 100%; height: 100%; object-fit: cover;">
                             </div>
-                            <div class="col-12 col-md-6 col-lg-6">
+                            <div class="col-12 col-md-7 col-lg-7">
                                 <div class="card-body">
                                     <h5 class="card-title">PREGNANCY CARE</h5>
                                     <p class="card-text">We offer specialized pregnancy care with prenatal monitoring
@@ -542,7 +597,7 @@
                                 <img src="assets/images/service/maternity-care.webp" alt="..." class="img-fluid"
                                     style="width: 100%; height: 100%; object-fit: cover;">
                             </div>
-                            <div class="col-12 col-md-6 col-lg-6">
+                            <div class="col-12 col-md-7 col-lg-7">
                                 <div class="card-body">
                                     <h5 class="card-title">MATERNITY CARE</h5>
                                     <p class="card-text">Our maternity care services support mothers before and after
@@ -561,7 +616,7 @@
                                 <img src="assets/images/service/school-nurse.webp" alt="..." class="img-fluid"
                                     style="width: 100%; height: 100%; object-fit: cover;">
                             </div>
-                            <div class="col-12 col-md-6 col-lg-6">
+                            <div class="col-12 col-md-7 col-lg-7">
                                 <div class="card-body">
                                     <h5 class="card-title">SCHOOL NURSE</h5>
                                     <p class="card-text">We provide professional school nurses to ensure student health,
@@ -577,29 +632,10 @@
                     <div class="card mb-3 border-0 rounded-0  shadow-lg  bg-white">
                         <div class="row no-gutters">
                             <div class="col-12 col-md-5 col-lg-5">
-                                <img src="assets/images/service/newborn-and-child-care.webp" alt="..." class="img-fluid"
-                                    style="width: 100%; height: 100%; object-fit: cover;">
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-6">
-                                <div class="card-body">
-                                    <h5 class="card-title">NEWBORN AND CHILD CARE</h5>
-                                    <p class="card-text">Our newborn and child care services help parents with feeding,
-                                        hygiene, and daily care to ensure healthy growth and development.</p>
-                                    <a href="tel:+97451873337" class="lab-btn"><span>Contact Us <i
-                                                class="icofont-rounded-double-right"></i></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-12 col-lg-6 mb-5 ">
-                    <div class="card mb-3 border-0 rounded-0  shadow-lg  bg-white">
-                        <div class="row no-gutters">
-                            <div class="col-12 col-md-5 col-lg-5">
                                 <img src="assets/images/service/travel-care.webp" alt="..." class="img-fluid"
                                     style="width: 100%; height: 100%; object-fit: cover;">
                             </div>
-                            <div class="col-12 col-md-6 col-lg-6">
+                            <div class="col-12 col-md-7 col-lg-7">
                                 <div class="card-body">
                                     <h5 class="card-title">TRAVEL CARE</h5>
                                     <p class="card-text">We provide travel care services with medical preparation and
@@ -612,6 +648,26 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-12 col-lg-6 mb-5 ">
+                    <div class="card mb-3 border-0 rounded-0  shadow-lg  bg-white">
+                        <div class="row no-gutters">
+                            <div class="col-12 col-md-5 col-lg-5">
+                                <img src="assets/images/service/corporate-nurses.webp" alt="..." class="img-fluid"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="col-12 col-md-7 col-lg-7">
+                                <div class="card-body">
+                                    <h5 class="card-title">CORPORATE NURSES</h5>
+                                    <p class="card-text">Our corporate nursing services ensure employee health and
+                                        safety through on-site medical support and wellness programs.</p>
+                                    <a href="tel:+97451873337" class="lab-btn"><span>Contact Us <i
+                                                class="icofont-rounded-double-right"></i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="col-12 col-md-12 col-lg-6 mb-5 ">
                     <div class="card mb-3 border-0 rounded-0  shadow-lg  bg-white">
                         <div class="row no-gutters">
                             <div class="col-12 col-md-5 col-lg-5">
@@ -629,7 +685,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <!-- <div class="section-wrapper">
                     <div class="service-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
                         <div class="service-inner">
@@ -786,10 +842,10 @@
     <a href="#" class="scrollToTop"><i class="icofont-rounded-up"></i></a>
     <!-- scrollToTop ending here -->
 
-    <div class="language-switch-buttons">
+    <!-- <div class="language-switch-buttons">
         <a href="index.html" class="lang-btn en"></a>
         <a href="index-ar.html" class="lang-btn ar"></a>
-    </div>
+    </div> -->
 
 
     <!-- All Scripts -->
